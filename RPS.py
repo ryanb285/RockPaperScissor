@@ -8,13 +8,16 @@ user_choice = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
 print(user_choice)
 
-if (user_choice == "rock") or (user_choice == "paper") or (user_choice == "scissors")
+if(user_choice == "rock") or (user_choice == "paper") or (user_choice == "scissors")
     print("Good choice!")
 else:
     print("Game canceled")
     exit()
 
-computer_choice = random.choice("rock", "paper", "scissor")
+
+valid_options = ["rock", "paper", "Scissors"]
+computer_choice = random.choice(valid_options)
+print("Computer choice: ", computer_choice)
 
 
 
